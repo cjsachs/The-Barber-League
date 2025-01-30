@@ -104,3 +104,12 @@ h2 {
     object-position: top;
   }
 }
+
+@media (width <= 468px) {
+  #tbl-logo {
+    width: 40px;
+  }
+  .a-text {
+    font-size: 12px;
+  }
+}
