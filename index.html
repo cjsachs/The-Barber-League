@@ -32,17 +32,28 @@
     <!-- Hero Section -->
     <header class="relative py-32 text-center text-white overflow-hidden animate__animated animate__fadeIn">
         <!-- Video Background -->
-        <video 
-            class="video-background" 
-            autoplay 
-            muted 
-            loop 
-            playsinline
-        >
-            <source src="./videos/bg.mp4" type="video/mp4">
-            <!-- Fallback image if video fails to load -->
-            <img src="./images/shop/entrance.jpeg" alt="Barbershop Interior" class="w-full h-full object-cover">
-        </video>
+        <div class="hero-background">
+            <!-- Video (desktop only) -->
+            <div class="video-wrapper">
+                <video 
+                    class="w-full h-full object-cover"
+                    autoplay 
+                    muted 
+                    loop 
+                    playsinline
+                >
+                    <source src="./videos/bg.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <!-- Fallback image (mobile and backup) -->
+            <img 
+                src="./images/shop/entrance.jpeg" 
+                alt="Barbershop Interior" 
+                class="fallback-image"
+            >
+        </div>
+
         <div class="absolute inset-0 bg-black opacity-80"></div>
         <div class="relative container mx-auto px-4">
             <h2 class="text-5xl mb-4">Welcome to The Barber League</h2>
