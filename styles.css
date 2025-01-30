@@ -21,7 +21,8 @@ footer {
 }
 
 h2 {
-  font-family: "Niconne", serif;
+  font-style: italic;
+  font-weight: bold;
   letter-spacing: 3px;
 }
 
@@ -101,7 +102,11 @@ h2 {
   }
 
   #dan {
-    object-position: top;
+    object-position: 0px 30%;
+  }
+
+  #edgar {
+    object-position: 0px 30%;
   }
 }
 
