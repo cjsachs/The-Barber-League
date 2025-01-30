@@ -20,6 +20,17 @@ footer {
   background-color: #3B3A39;
 }
 
+h2 {
+  font-family: "Niconne", serif;
+  letter-spacing: 3px;
+}
+
+.service-img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
 .btn-grad {background-image: linear-gradient(to right, #8e9eab 0%, #eef2f3  51%, #8e9eab  100%)}
 .btn-grad {
    margin: 10px;
@@ -72,4 +83,24 @@ footer {
 .texture-lines {
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f3f4f6' fill-opacity='0.6' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+}
+
+@media (width <= 768px) {
+  #kenny {
+    object-position: 0px 20%;
+  }
+
+  #dan {
+    object-position: top;
+  }
 }
