@@ -1,186 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Barber League</title>
-    <link rel="icon" type="image/x-icon" href="./images/tbl-logo.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/tbl-logo.png" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/c9f2cf8370.js" crossorigin="anonymous"></script>
-</head>
-<body class="bg-gray-100">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c9f2cf8370.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-gray-100">
     <!-- Navigation -->
     <nav class="bg-white text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="animate__animated animate__backInLeft">
-                <img id="tbl-logo" src="./images/tbl-logo.png" alt="the-barber-league-logo">
-            </div>
-            <ul class="flex space-x-6 animate__animated animate__backInRight">
-                <li><a href="#home" class=" hover:text-gray-300 text-black semi-bold font-semibold border-l-2 border-black pl-3 a-text">Home</a></li>
-                <li><a href="#team" class="hover:text-gray-300 text-black font-semibold border-l-2 border-black pl-3 a-text">Our Team</a></li>
-                <li><a href="#gallery" class="hover:text-gray-300 text-black font-semibold border-l-2 border-black pl-3 a-text">Gallery</a></li>
-                <li><a href="#contact" class="hover:text-gray-300 text-black font-semibold border-l-2 border-black pl-3 a-text">Contact</a></li>
-            </ul>
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="animate__animated animate__backInLeft">
+          <img
+            id="tbl-logo"
+            src="./images/tbl-logo.png"
+            alt="the-barber-league-logo"
+          />
         </div>
+        <ul class="flex space-x-6 animate__animated animate__backInRight">
+          <li>
+            <a
+              href="#home"
+              class="hover:text-gray-300 text-black semi-bold font-semibold border-l-2 border-black pl-3 a-text"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#team"
+              class="hover:text-gray-300 text-black font-semibold border-l-2 border-black pl-3 a-text"
+              >Our Team</a
+            >
+          </li>
+          <li>
+            <a
+              href="#gallery"
+              class="hover:text-gray-300 text-black font-semibold border-l-2 border-black pl-3 a-text"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="hover:text-gray-300 text-black font-semibold border-l-2 border-black pl-3 a-text"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative py-32 text-center text-white overflow-hidden animate__animated animate__fadeIn">
-        <!-- Video Background -->
-        <div class="hero-background">
-            <!-- Video (desktop only) -->
-            <div class="video-wrapper">
-                <video 
-                    class="w-full h-full object-cover"
-                    autoplay 
-                    muted 
-                    loop 
-                    playsinline
-                >
-                    <source src="./videos/bg.mp4" type="video/mp4">
-                </video>
-            </div>
-            
-            <!-- Fallback image (mobile and backup) -->
-            <img 
-                src="./images/shop/entrance.jpeg" 
-                alt="Barbershop Interior" 
-                class="fallback-image"
-            >
+    <header
+      class="relative py-32 text-center text-white overflow-hidden animate__animated animate__fadeIn"
+    >
+      <!-- Video Background -->
+      <div class="hero-background">
+        <!-- Video (desktop only) -->
+        <div class="video-wrapper">
+          <video
+            class="w-full h-full object-cover"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="./videos/bg.mp4" type="video/mp4" />
+          </video>
         </div>
 
-        <div class="absolute inset-0 bg-black opacity-80"></div>
-        <div class="relative container mx-auto px-4">
-            <h2 class="text-5xl mb-4">Welcome to The Barber League</h2>
-            <p class="text-xl mb-8">Professional Haircuts & Grooming Services</p>
-            <a href="https://getsquire.com/booking/brands/the-barber-league" target="_blank" class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition btn-grad">Book Appointment</a>
-        </div>
+        <!-- Fallback image (mobile and backup) -->
+        <img
+          src="./images/shop/entrance.jpeg"
+          alt="Barbershop Interior"
+          class="fallback-image"
+        />
+      </div>
+
+      <div class="absolute inset-0 bg-black opacity-80"></div>
+      <div class="relative container mx-auto px-4">
+        <h2 class="text-5xl mb-4">Welcome to The Barber League</h2>
+        <p class="text-xl mb-8">Professional Haircuts & Grooming Services</p>
+        <a
+          href="https://getsquire.com/booking/brands/the-barber-league"
+          target="_blank"
+          class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition btn-grad"
+          >Book Appointment</a
+        >
+      </div>
     </header>
-    
+
     <!-- Services Section -->
     <section id="services" class="py-16 bg-white texture-lines">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl text-center mb-12 animate__animated animate__fadeIn">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-md animate__animated animate__backInLeft">
-                    <img class="service-img" src="./images/work/work1.png" alt="Haircut">
-                    <h3 class="text-xl font-bold my-4">Haircut</h3>
-                    <p class="mb-4">Precision, style, and confidence start with the perfect cut. Our expert barbers craft every haircut to match your unique look, whether you’re after a classic, modern, or trendsetting style.</p>
-                </div>
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-md animate__animated animate__fadeIn">
-                    <img class="service-img" src="./images/work/beard.png" alt="Beard-Trim">
-                    <h3 class="text-xl font-bold my-4">Beard Trim</h3>
-                    <p class="mb-4">Keep your beard looking sharp and well-groomed with our expert beard trimming service. Whether you prefer a full, sculpted beard or a neatly maintained stubble, our barbers shape and define your facial hair to complement your style.</p>
-                </div>
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-md animate__animated animate__backInRight">
-                    <img class="service-img" src="./images/work/hot-towel.png" alt="Hot-Towel">
-                    <h3 class="text-xl font-bold my-4">Hot Towel Shave</h3>
-                    <p class="mb-4">Experience the ultimate in classic grooming with our luxurious hot towel shave. Relax as a warm towel softens your skin and prepares it for a smooth, close shave with a straight razor.</p>
-                </div>
-            </div>
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl text-center mb-12 animate__animated animate__fadeIn"
+        >
+          Our Services
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="text-center p-6 bg-gray-50 rounded-lg shadow-md animate__animated animate__backInLeft"
+          >
+            <img
+              class="service-img"
+              src="./images/work/work1.png"
+              alt="Haircut"
+            />
+            <h3 class="text-xl font-bold my-4">Haircut</h3>
+            <p class="mb-4">
+              Precision, style, and confidence start with the perfect cut. Our
+              expert barbers craft every haircut to match your unique look,
+              whether you’re after a classic, modern, or trendsetting style.
+            </p>
+          </div>
+          <div
+            class="text-center p-6 bg-gray-50 rounded-lg shadow-md animate__animated animate__fadeIn"
+          >
+            <img
+              class="service-img"
+              src="./images/work/beard.png"
+              alt="Beard-Trim"
+            />
+            <h3 class="text-xl font-bold my-4">Beard Trim</h3>
+            <p class="mb-4">
+              Keep your beard looking sharp and well-groomed with our expert
+              beard trimming service. Whether you prefer a full, sculpted beard
+              or a neatly maintained stubble, our barbers shape and define your
+              facial hair to complement your style.
+            </p>
+          </div>
+          <div
+            class="text-center p-6 bg-gray-50 rounded-lg shadow-md animate__animated animate__backInRight"
+          >
+            <img
+              class="service-img"
+              src="./images/work/hot-towel.png"
+              alt="Hot-Towel"
+            />
+            <h3 class="text-xl font-bold my-4">Hot Towel Shave</h3>
+            <p class="mb-4">
+              Experience the ultimate in classic grooming with our luxurious hot
+              towel shave. Relax as a warm towel softens your skin and prepares
+              it for a smooth, close shave with a straight razor.
+            </p>
+          </div>
         </div>
-
+      </div>
     </section>
-    
+
     <!-- Team Section -->
     <section id="team" class="py-16 texture-dots">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl text-center mb-12 animate__animated animate__fadeIn">Meet Our Expert Barbers</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg animate__animated animate__backInLeft">
-                    <img id="kenny" src="./images/barbers/kenny.png" alt="Barber 1" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Kenny</h3>
-                        <p class="text-gray-600 mb-4">Master Barber</p>
-                        <p class="text-sm text-gray-500 tracking-wide">With 15 years of experience and a passion for precision, Kenny delivers expert cuts, sharp fades, and timeless styles. Dedicated to craftsmanship and client satisfaction, Kenny ensures every cut is tailored to perfection.</p>
-                        <a href="https://getsquire.com/booking/brands/the-barber-league" target="_blank" class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition btn-grad-2">Book Appointment</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg animate__animated animate__backInLeft">
-                    <img id="dan" src="./images/barbers/dan.jpg" alt="Barber 2" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Dan (El Choppo)</h3>
-                        <p class="text-gray-600 mb-4">Master Barber</p>
-                        <p class="text-sm text-gray-500 tracking-wide">With 7 years of experience and a championship pedigree as a 2x NM Barber Southwest Tag Team Champion. Dan delivers sharp, stylish cuts and expertly sculpted beards, ensuring every client leaves looking their absolute best.</p>
-                        <a href="https://getsquire.com/booking/brands/the-barber-league" target="_blank" class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition btn-grad-2">Book Appointment</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg animate__animated animate__backInRight">
-                    <img src="./images/barbers/dev.jpg" alt="Barber 3" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Dev</h3>
-                        <p class="text-gray-600 mb-4">Master Barber</p>
-                        <p class="text-sm text-gray-500 tracking-wide">With 7 years of experience, Dev specializes in trendy cuts and intricate hair designs, blending creativity with precision. A 2x NM Barber Southwest Freestyle & Tag Team Champion, Dev masterfully crafts unique styles that stand out.</p>
-                        <a href="https://getsquire.com/booking/brands/the-barber-league" target="_blank" class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition btn-grad-2">Book Appointment</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg animate__animated animate__backInRight">
-                    <img id="edgar" src="./images/barbers/edgar.jpg" alt="Barber 3" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Edgar</h3>
-                        <p class="text-gray-600 mb-4">Style Specialist</p>
-                        <p class="text-sm text-gray-500 tracking-wide">With 7 years of experience, Edgar provides expert grooming services, specializing in precision fades, modern haircuts, stylish faux hawks, and relaxing hot towel shaves, ensuring a clean, refined look tailored to each client.</p>
-                        <a href="https://getsquire.com/booking/brands/the-barber-league" target="_blank" class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition btn-grad-2">Book Appointment</a>
-                    </div>
-                </div>
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl text-center mb-12 animate__animated animate__fadeIn"
+        >
+          Meet Our Expert Barbers
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg animate__animated animate__backInLeft"
+          >
+            <img
+              id="kenny"
+              src="./images/barbers/kenny.png"
+              alt="Barber 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Kenny</h3>
+              <p class="text-gray-600 mb-4">Master Barber</p>
+              <p class="text-sm text-gray-500 tracking-wide">
+                With 15 years of experience and a passion for precision, Kenny
+                delivers expert cuts, sharp fades, and timeless styles.
+                Dedicated to craftsmanship and client satisfaction, Kenny
+                ensures every cut is tailored to perfection.
+              </p>
+              <a
+                href="https://getsquire.com/booking/brands/the-barber-league"
+                target="_blank"
+                class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition btn-grad-2"
+                >Book Appointment</a
+              >
             </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg animate__animated animate__backInRight"
+          >
+            <img
+              src="./images/barbers/dev.jpg"
+              alt="Barber 3"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Dev</h3>
+              <p class="text-gray-600 mb-4">Master Barber</p>
+              <p class="text-sm text-gray-500 tracking-wide">
+                With 7 years of experience, Dev specializes in trendy cuts and
+                intricate hair designs, blending creativity with precision. A 2x
+                NM Barber Southwest Freestyle & Tag Team Champion, Dev
+                masterfully crafts unique styles that stand out.
+              </p>
+              <a
+                href="https://getsquire.com/booking/brands/the-barber-league"
+                target="_blank"
+                class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition btn-grad-2"
+                >Book Appointment</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg animate__animated animate__backInRight"
+          >
+            <img
+              id="edgar"
+              src="./images/barbers/edgar.jpg"
+              alt="Barber 3"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Edgar</h3>
+              <p class="text-gray-600 mb-4">Style Specialist</p>
+              <p class="text-sm text-gray-500 tracking-wide">
+                With 7 years of experience, Edgar provides expert grooming
+                services, specializing in precision fades, modern haircuts,
+                stylish faux hawks, and relaxing hot towel shaves, ensuring a
+                clean, refined look tailored to each client.
+              </p>
+              <a
+                href="https://getsquire.com/booking/brands/the-barber-league"
+                target="_blank"
+                class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition btn-grad-2"
+                >Book Appointment</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="py-16 bg-white texture-lines">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl text-center mb-12 animate__animated animate__fadeIn">Our Work</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <img src="./images/work/1.jpg" alt="Haircut Style 1" class="w-full h-64 object-cover rounded-lg animate__animated animate__backInLeft">
-                <img src="./images/work/348s.jpg" alt="Haircut Style 2" class="w-full h-64 object-cover rounded-lg animate__animated animate__backInLeft">
-                <img src="./images/work/show.jpg" alt="Haircut Style 3" class="w-full h-64 object-cover rounded-lg animate__animated animate__backInRight">
-                <img src="./images/work/dan.jpg" alt="Haircut Style 4" class="w-full h-64 object-cover rounded-lg animate__animated animate__backInRight">
-            </div>
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl text-center mb-12 animate__animated animate__fadeIn"
+        >
+          Our Work
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <img
+            src="./images/work/1.jpg"
+            alt="Haircut Style 1"
+            class="w-full h-64 object-cover rounded-lg animate__animated animate__backInLeft"
+          />
+          <img
+            src="./images/work/348s.jpg"
+            alt="Haircut Style 2"
+            class="w-full h-64 object-cover rounded-lg animate__animated animate__backInLeft"
+          />
+          <img
+            src="./images/work/show.jpg"
+            alt="Haircut Style 3"
+            class="w-full h-64 object-cover rounded-lg animate__animated animate__backInRight"
+          />
+          <img
+            src="./images/work/dan.jpg"
+            alt="Haircut Style 4"
+            class="w-full h-64 object-cover rounded-lg animate__animated animate__backInRight"
+          />
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16  animate__animated animate__fadeIn">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl text-center mb-12">Contact Us</h2>
-            <div class="max-w-2xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-xl font-bold mb-4"><i class="fa-solid fa-clock mr-2"></i>Hours</h3>
-                        <ul class="space-y-2">
-                            <li>Tuesday - Friday: 9am - 6pm</li>
-                            <li>Saturday: 9am - 5pm</li>
-                            <li>Sunday - Monday: Closed</li>
-                        </ul>
-                    </div>
-                    <div>
-                        
-                        <h3 class="text-xl font-bold mb-4"><i class="fa-solid fa-location-crosshairs mr-2"></i>Location</h3>
-                        <p>4009 E Main St. Suite D</p>
-                        <p>Farmington, NM 87402</p>
-                        <p class="mt-4">Phone: (323) 695-6889</p>
-                    </div>
-                </div>
+    <section id="contact" class="py-16 animate__animated animate__fadeIn">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl text-center mb-12">Contact Us</h2>
+        <div class="max-w-2xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold mb-4">
+                <i class="fa-solid fa-clock mr-2"></i>Hours
+              </h3>
+              <ul class="space-y-2">
+                <li>Tuesday - Friday: 9am - 6pm</li>
+                <li>Saturday: 9am - 5pm</li>
+                <li>Sunday - Monday: Closed</li>
+              </ul>
             </div>
+            <div>
+              <h3 class="text-xl font-bold mb-4">
+                <i class="fa-solid fa-location-crosshairs mr-2"></i>Location
+              </h3>
+              <p>4009 E Main St. Suite D</p>
+              <p>Farmington, NM 87402</p>
+              <p class="mt-4">Phone: (323) 695-6889</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- Footer -->
     <footer class="text-white py-8 animate__animated animate__backInUp">
-        <div class="container mx-auto px-4 text-center">
-            <div>
-                <img class="mx-auto" id="tbl-logo" src="./images/tbl-logo.png" alt="the-barber-league-logo">
-            </div>
-            <p>&copy; 2025 The Barber League. All rights reserved.</p>
+      <div class="container mx-auto px-4 text-center">
+        <div>
+          <img
+            class="mx-auto"
+            id="tbl-logo"
+            src="./images/tbl-logo.png"
+            alt="the-barber-league-logo"
+          />
         </div>
+        <p>&copy; 2025 The Barber League. All rights reserved.</p>
+      </div>
     </footer>
-    <script type="text/javascript"> !function(e,t){var i=e.createElement("script"),sa="setAttribute";i.src="https://widget.getsquire.com/widget.js?"+Date.now(),i[sa]("defer",""),i[sa]("type","text/javascript"),i[sa]("brand",t.brand),i[sa]("x-squire-inline-enabled",t.inline||!1),e.head.appendChild(i)}(document,{brand:"54eb0bdb-400d-4748-a30d-8146a432073e",inline:true}); </script>
-</body>
+    <script type="text/javascript">
+      !(function (e, t) {
+        var i = e.createElement('script'),
+          sa = 'setAttribute';
+        (i.src = 'https://widget.getsquire.com/widget.js?' + Date.now()),
+          i[sa]('defer', ''),
+          i[sa]('type', 'text/javascript'),
+          i[sa]('brand', t.brand),
+          i[sa]('x-squire-inline-enabled', t.inline || !1),
+          e.head.appendChild(i);
+      })(document, {
+        brand: '54eb0bdb-400d-4748-a30d-8146a432073e',
+        inline: true,
+      });
+    </script>
+  </body>
 </html>
